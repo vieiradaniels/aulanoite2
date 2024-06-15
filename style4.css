@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background 0.3s ease;
+    color: #333;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input[type="number"], select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="submit"], input[type="reset"] {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #28a745, #218838);
+    color: white;
+    transition: background 0.3s ease;
+    width: calc(50% - 10px);
+}
+
+input[type="reset"] {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #218838, #28a745);
+}
+
+input[type="reset"]:hover {
+    background: linear-gradient(135deg, #c82333, #dc3545);
+}
+
+.resposta {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(100% - 40px); 
+    box-sizing: border-box; 
+}
+
+.erro {
+    color: red;
+}
+
+body.frio {
+    background: linear-gradient(135deg, #2193b0, #6dd5ed);
+}
+
+body.ameno {
+    background: linear-gradient(135deg, #6dd5ed, #c7f108);
+}
+
+body.quente {
+    background: linear-gradient(135deg, #ff5e62, #ff9966);
+}
